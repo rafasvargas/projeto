@@ -33,11 +33,11 @@
                             
                         <label>Usuário: </label>
 
-                        <input id='name' type="text" name="username" size="10px"><br>
+                        <input id='name' type="text" name="username" placeholder="Usuário" size="10px"><br>
 
                         <label>Senha: </label>
 
-                        <input id='password' type="password" name="password" size="10px"><br>
+                        <input id='password' type="password" name="password" placeholder="Senha" size="10px"><br>
 
                         <button type="submit"> Entrar </button>
                      </div>
@@ -46,7 +46,7 @@
 
          </div>
         {% for message in messages %}
-            <div align='center'>
+            <div class='errado'>
                 <strong>ERRO : </strong>{{message}}
             </div>
         {% endfor %}
